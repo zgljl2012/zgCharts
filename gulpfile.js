@@ -34,10 +34,17 @@ gulp.task('build', function(){
 	});
 });
 
+gulp.task("styles", function(){
+	gulp.src(['src/styles/*.css'])
+		.pipe(gulp.dest("build/"))
+		.pipe(gulp.dest("test/css/"));
+});
+
 // 文件监控
 gulp.task("watch", function(){
-	gulp.watch("./src/*.*", ["build"]);
+	gulp.watch("./src/**/*.*", ["build", "styles"]);
+	gulp.watch("./src/*.*", ["build"])
 });
 
 // 默认任务
-gulp.task("default", ["watch", "build"]);
+gulp.task("default", ["watch", "build", "styles"]);

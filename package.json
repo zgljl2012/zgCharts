@@ -18,6 +18,9 @@
     	"url": "https://github.com/zgljl2012/zgCharts.git"
   	},
 	"license":"ISC",
+	"devDepencies":{
+		"gulp-minify-css":"*"
+	},
 	"dependencies":{
 		"d3":"^4.2.2",
 		"gulp":"^3.9.1",

@@ -1,4 +1,9 @@
 export {
+	build,
+	extend
+} from "./scripts/core.js"
+
+export {
 	histogram
-} from "./histogram.js"
+} from "./scripts/histogram.js"
 
