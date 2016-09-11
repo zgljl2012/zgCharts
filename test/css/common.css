@@ -4,7 +4,21 @@ div.htm-item {
 	display:inline-block;
 	width:20px;
 	height:75px;
+	
 }
+
+/**
+ * 直方图
+ */
+svg.histogram {
+
+}
+
+svg.histogram rect {
+	fill: red;
+}
+
+
 
 div {
 
